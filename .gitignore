@@ -1,0 +1,26 @@
+# Rust
+/target/
+Cargo.lock
+
+# Environment variables
+.env
+
+# Database
+*.db
+
+# Logs
+*.log
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Temporary files
+/tmp/
+*.tmp

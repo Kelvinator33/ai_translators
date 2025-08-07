@@ -1,0 +1,25 @@
+[package]
+name = "task043"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-web = "4"
+actix-multipart = "0.6"
+sled = "0.34"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+uuid = { version = "1.0", features = ["v4"] }
+reqwest = { version = "0.11", features = ["json", "multipart"] }
+base64 = "0.21"
+image = "0.24"
+dotenvy = "0.15"  # Environment variables
+env_logger = "0.10"
+tempfile = "3.8"
+futures-util = "0.3"
+jsonwebtoken = "9.2"  # JWT tokens for auth
+bcrypt = "0.15"  # Password hashing  
+chrono = { version = "0.4", features = ["serde"] }  # Date/time
+imageproc = "0.24"  # Image processing for overlays
+rusttype = "0.9"  # Font rendering for text overlays
