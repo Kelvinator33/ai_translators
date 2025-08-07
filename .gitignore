@@ -1,6 +1,5 @@
 # Rust
 /target/
-Cargo.lock
 .claude
 
 # Environment variables
@@ -8,6 +7,7 @@ Cargo.lock
 
 # Database
 *.db
+/translation_service.db/
 
 # Logs
 *.log
@@ -25,3 +25,11 @@ Thumbs.db
 # Temporary files
 /tmp/
 *.tmp
+
+# Test files
+test_image.png
+exported_test.png
+create_test_image.py
+
+# Keep for deployment
+!Cargo.lock

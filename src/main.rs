@@ -288,7 +288,7 @@ async fn main() -> std::io::Result<()> {
                     }))
             )
     })
-    .bind("127.0.0.1:3000")?
+    .bind(format!("0.0.0.0:{}", std::env::var("PORT").unwrap_or_else(|_| "3000".to_string())))?
     .run()
     .await
 }

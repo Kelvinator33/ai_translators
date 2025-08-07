@@ -1,8 +1,12 @@
 // API functions
 const api = {
+    getBaseUrl() {
+        return window.Config?.API_BASE_URL || '';
+    },
+    
     async getBackends() {
         try {
-            const response = await fetch('/api/backends');
+            const response = await fetch(`${this.getBaseUrl()}/api/backends`);
             return await response.json();
         } catch (error) {
             console.error('Failed to fetch backends:', error);
@@ -12,7 +16,7 @@ const api = {
 
     async saveBackend(backend) {
         try {
-            const response = await fetch('/api/backends', {
+            const response = await fetch(`${this.getBaseUrl()}/api/backends`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(backend)
@@ -26,7 +30,7 @@ const api = {
 
     async translateText(text, sourceLanguage, targetLanguage, backendId) {
         try {
-            const response = await fetch('/api/translate', {
+            const response = await fetch(`${this.getBaseUrl()}/api/translate`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -51,7 +55,7 @@ const api = {
             formData.append('target_lang', targetLanguage);
             formData.append('backend_id', backendId);
 
-            const response = await fetch('/api/upload', {
+            const response = await fetch(`${this.getBaseUrl()}/api/upload`, {
                 method: 'POST',
                 body: formData
             });
@@ -82,7 +86,7 @@ const api = {
             formData.append('export_type', 'overlay'); // Can be 'overlay' or 'sidebyside'
 
             console.log('Sending export request...');
-            const response = await fetch('/api/export', {
+            const response = await fetch(`${this.getBaseUrl()}/api/export`, {
                 method: 'POST',
                 body: formData
             });

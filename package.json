@@ -1,0 +1,13 @@
+{
+  "name": "ai-translation-dashboard",
+  "version": "1.0.0",
+  "description": "AI Translation Service with Multiple Backend Support",
+  "main": "static/index.html",
+  "scripts": {
+    "build": "echo 'Static files ready'",
+    "start": "echo 'Static site - no server needed'"
+  },
+  "keywords": ["ai", "translation", "rust", "mithril", "dashboard"],
+  "author": "Your Name",
+  "license": "MIT"
+}

@@ -1,0 +1,14 @@
+target/
+.git/
+.gitignore
+README.md
+DEPLOYMENT.md
+.env
+*.db
+translation_service.db/
+.claude/
+test_image.png
+exported_test.png
+create_test_image.py
+test.txt
+test_image.html

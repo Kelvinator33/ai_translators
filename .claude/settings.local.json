@@ -13,7 +13,14 @@
       "Bash(timeout 10s cargo run)",
       "Bash(timeout:*)",
       "Bash(taskkill:*)",
-      "Bash(python:*)"
+      "Bash(python:*)",
+      "Bash(railway up:*)",
+      "Bash(railway status:*)",
+      "Bash(railway service:*)",
+      "Bash(railway deploy:*)",
+      "Bash(railway add:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)"
     ],
     "deny": []
   }

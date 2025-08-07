@@ -1,7 +1,7 @@
 [package]
 name = "task043"
 version = "0.1.0"
-edition = "2024"
+edition = "2021"
 
 [dependencies]
 actix-web = "4"
@@ -21,5 +21,5 @@ futures-util = "0.3"
 jsonwebtoken = "9.2"  # JWT tokens for auth
 bcrypt = "0.15"  # Password hashing  
 chrono = { version = "0.4", features = ["serde"] }  # Date/time
-imageproc = "0.24"  # Image processing for overlays
-rusttype = "0.9"  # Font rendering for text overlays
+# imageproc = "0.24"  # Image processing for overlays (removed - not used)
+# rusttype = "0.9"  # Font rendering for text overlays (removed - using custom bitmap fonts)
