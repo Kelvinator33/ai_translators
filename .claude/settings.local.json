@@ -20,7 +20,10 @@
       "Bash(railway deploy:*)",
       "Bash(railway add:*)",
       "Bash(git add:*)",
-      "Bash(git commit:*)"
+      "Bash(git commit:*)",
+      "Bash(railway link:*)",
+      "Bash(git push:*)",
+      "Bash(git pull:*)"
     ],
     "deny": []
   }
